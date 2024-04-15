@@ -11,7 +11,7 @@ public class FileUtils {
     private FileUtils(){}
 
     public static BufferedReader getBufferReader(String fileName) throws FileNotFoundException {
-        FileReader produtoArq = new FileReader(ResourceUtils.getFile("classpath:"+fileName));
+        FileReader produtoArq = new FileReader(ResourceUtils.getFile("classpath:"+fileName).getAbsoluteFile());
        return new BufferedReader(produtoArq);
     }
 }
