@@ -17,7 +17,7 @@ public abstract class AbstractImportFileLoader implements ApplicationRunner {
                 createElementItem(linha);
             }
         } catch (FileNotFoundException e) {
-            throw new RuntimeException("Arquivo não encontrado", e);
+            throw new RuntimeException("Arquivo não encontrado: "+ fileName, e);
         } catch (IOException e) {
             throw new RuntimeException("Erro ao ler a linha do arquivo", e);
         }
