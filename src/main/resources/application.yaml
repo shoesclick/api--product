@@ -36,9 +36,9 @@ info:
 
 logging:
   level:
-    org.springframework.web: DEBUG
-  pattern:
-    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+    org:
+      zalando:
+        logbook: DEBUG
 
 management:
   server:
